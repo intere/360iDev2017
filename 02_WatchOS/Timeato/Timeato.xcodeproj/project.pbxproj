@@ -1,0 +1,718 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		364BC30C1F40F05900B9A4DB /* TimerSettingsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364BC30B1F40F05900B9A4DB /* TimerSettingsInterfaceController.swift */; };
+		364BC30E1F40F2B100B9A4DB /* TimerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364BC30D1F40F2B100B9A4DB /* TimerSettings.swift */; };
+		364CE0151F40E68700DA43DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364CE0141F40E68700DA43DE /* AppDelegate.swift */; };
+		364CE0171F40E68700DA43DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364CE0161F40E68700DA43DE /* ViewController.swift */; };
+		364CE01A1F40E68700DA43DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 364CE0181F40E68700DA43DE /* Main.storyboard */; };
+		364CE01C1F40E68700DA43DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 364CE01B1F40E68700DA43DE /* Assets.xcassets */; };
+		364CE01F1F40E68700DA43DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 364CE01D1F40E68700DA43DE /* LaunchScreen.storyboard */; };
+		364CE02A1F40E68800DA43DE /* TimeatoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364CE0291F40E68800DA43DE /* TimeatoTests.swift */; };
+		364CE02F1F40E68800DA43DE /* Timeato WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 364CE02E1F40E68800DA43DE /* Timeato WatchKit App.app */; };
+		364CE0351F40E68800DA43DE /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 364CE0331F40E68800DA43DE /* Interface.storyboard */; };
+		364CE0371F40E68800DA43DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 364CE0361F40E68800DA43DE /* Assets.xcassets */; };
+		364CE03E1F40E68800DA43DE /* Timeato WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 364CE03D1F40E68800DA43DE /* Timeato WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		364CE0431F40E68800DA43DE /* TimerInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364CE0421F40E68800DA43DE /* TimerInterfaceController.swift */; };
+		364CE0451F40E68800DA43DE /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364CE0441F40E68800DA43DE /* ExtensionDelegate.swift */; };
+		364CE0471F40E68800DA43DE /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364CE0461F40E68800DA43DE /* ComplicationController.swift */; };
+		364CE0491F40E68800DA43DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 364CE0481F40E68800DA43DE /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		364CE0261F40E68800DA43DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 364CE0091F40E68700DA43DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 364CE0101F40E68700DA43DE;
+			remoteInfo = Timeato;
+		};
+		364CE0301F40E68800DA43DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 364CE0091F40E68700DA43DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 364CE02D1F40E68800DA43DE;
+			remoteInfo = "Timeato WatchKit App";
+		};
+		364CE03F1F40E68800DA43DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 364CE0091F40E68700DA43DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 364CE03C1F40E68800DA43DE;
+			remoteInfo = "Timeato WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		364CE0501F40E68800DA43DE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				364CE03E1F40E68800DA43DE /* Timeato WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		364CE0541F40E68800DA43DE /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				364CE02F1F40E68800DA43DE /* Timeato WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		364BC30B1F40F05900B9A4DB /* TimerSettingsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerSettingsInterfaceController.swift; sourceTree = "<group>"; };
+		364BC30D1F40F2B100B9A4DB /* TimerSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerSettings.swift; sourceTree = "<group>"; };
+		364CE0111F40E68700DA43DE /* Timeato.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timeato.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		364CE0141F40E68700DA43DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		364CE0161F40E68700DA43DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		364CE0191F40E68700DA43DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		364CE01B1F40E68700DA43DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		364CE01E1F40E68700DA43DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		364CE0201F40E68700DA43DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		364CE0251F40E68800DA43DE /* TimeatoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeatoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		364CE0291F40E68800DA43DE /* TimeatoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeatoTests.swift; sourceTree = "<group>"; };
+		364CE02B1F40E68800DA43DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		364CE02E1F40E68800DA43DE /* Timeato WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Timeato WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		364CE0341F40E68800DA43DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		364CE0361F40E68800DA43DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		364CE0381F40E68800DA43DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		364CE03D1F40E68800DA43DE /* Timeato WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Timeato WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		364CE0421F40E68800DA43DE /* TimerInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerInterfaceController.swift; sourceTree = "<group>"; };
+		364CE0441F40E68800DA43DE /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		364CE0461F40E68800DA43DE /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		364CE0481F40E68800DA43DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		364CE04A1F40E68800DA43DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		364CE00E1F40E68700DA43DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		364CE0221F40E68800DA43DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		364CE03A1F40E68800DA43DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		364CE0081F40E68700DA43DE = {
+			isa = PBXGroup;
+			children = (
+				364CE0131F40E68700DA43DE /* Timeato */,
+				364CE0281F40E68800DA43DE /* TimeatoTests */,
+				364CE0321F40E68800DA43DE /* Timeato WatchKit App */,
+				364CE0411F40E68800DA43DE /* Timeato WatchKit Extension */,
+				364CE0121F40E68700DA43DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		364CE0121F40E68700DA43DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				364CE0111F40E68700DA43DE /* Timeato.app */,
+				364CE0251F40E68800DA43DE /* TimeatoTests.xctest */,
+				364CE02E1F40E68800DA43DE /* Timeato WatchKit App.app */,
+				364CE03D1F40E68800DA43DE /* Timeato WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		364CE0131F40E68700DA43DE /* Timeato */ = {
+			isa = PBXGroup;
+			children = (
+				364CE0141F40E68700DA43DE /* AppDelegate.swift */,
+				364CE0161F40E68700DA43DE /* ViewController.swift */,
+				364CE0181F40E68700DA43DE /* Main.storyboard */,
+				364CE01B1F40E68700DA43DE /* Assets.xcassets */,
+				364CE01D1F40E68700DA43DE /* LaunchScreen.storyboard */,
+				364CE0201F40E68700DA43DE /* Info.plist */,
+			);
+			path = Timeato;
+			sourceTree = "<group>";
+		};
+		364CE0281F40E68800DA43DE /* TimeatoTests */ = {
+			isa = PBXGroup;
+			children = (
+				364CE0291F40E68800DA43DE /* TimeatoTests.swift */,
+				364CE02B1F40E68800DA43DE /* Info.plist */,
+			);
+			path = TimeatoTests;
+			sourceTree = "<group>";
+		};
+		364CE0321F40E68800DA43DE /* Timeato WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				364CE0331F40E68800DA43DE /* Interface.storyboard */,
+				364CE0361F40E68800DA43DE /* Assets.xcassets */,
+				364CE0381F40E68800DA43DE /* Info.plist */,
+			);
+			path = "Timeato WatchKit App";
+			sourceTree = "<group>";
+		};
+		364CE0411F40E68800DA43DE /* Timeato WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				364CE0421F40E68800DA43DE /* TimerInterfaceController.swift */,
+				364CE0441F40E68800DA43DE /* ExtensionDelegate.swift */,
+				364CE0461F40E68800DA43DE /* ComplicationController.swift */,
+				364CE0481F40E68800DA43DE /* Assets.xcassets */,
+				364CE04A1F40E68800DA43DE /* Info.plist */,
+				364BC30B1F40F05900B9A4DB /* TimerSettingsInterfaceController.swift */,
+				364BC30D1F40F2B100B9A4DB /* TimerSettings.swift */,
+			);
+			path = "Timeato WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		364CE0101F40E68700DA43DE /* Timeato */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 364CE0551F40E68800DA43DE /* Build configuration list for PBXNativeTarget "Timeato" */;
+			buildPhases = (
+				364CE00D1F40E68700DA43DE /* Sources */,
+				364CE00E1F40E68700DA43DE /* Frameworks */,
+				364CE00F1F40E68700DA43DE /* Resources */,
+				364CE0541F40E68800DA43DE /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				364CE0311F40E68800DA43DE /* PBXTargetDependency */,
+			);
+			name = Timeato;
+			productName = Timeato;
+			productReference = 364CE0111F40E68700DA43DE /* Timeato.app */;
+			productType = "com.apple.product-type.application";
+		};
+		364CE0241F40E68800DA43DE /* TimeatoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 364CE0581F40E68800DA43DE /* Build configuration list for PBXNativeTarget "TimeatoTests" */;
+			buildPhases = (
+				364CE0211F40E68800DA43DE /* Sources */,
+				364CE0221F40E68800DA43DE /* Frameworks */,
+				364CE0231F40E68800DA43DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				364CE0271F40E68800DA43DE /* PBXTargetDependency */,
+			);
+			name = TimeatoTests;
+			productName = TimeatoTests;
+			productReference = 364CE0251F40E68800DA43DE /* TimeatoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		364CE02D1F40E68800DA43DE /* Timeato WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 364CE0511F40E68800DA43DE /* Build configuration list for PBXNativeTarget "Timeato WatchKit App" */;
+			buildPhases = (
+				364CE02C1F40E68800DA43DE /* Resources */,
+				364CE0501F40E68800DA43DE /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				364CE0401F40E68800DA43DE /* PBXTargetDependency */,
+			);
+			name = "Timeato WatchKit App";
+			productName = "Timeato WatchKit App";
+			productReference = 364CE02E1F40E68800DA43DE /* Timeato WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		364CE03C1F40E68800DA43DE /* Timeato WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 364CE04D1F40E68800DA43DE /* Build configuration list for PBXNativeTarget "Timeato WatchKit Extension" */;
+			buildPhases = (
+				364CE0391F40E68800DA43DE /* Sources */,
+				364CE03A1F40E68800DA43DE /* Frameworks */,
+				364CE03B1F40E68800DA43DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Timeato WatchKit Extension";
+			productName = "Timeato WatchKit Extension";
+			productReference = 364CE03D1F40E68800DA43DE /* Timeato WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		364CE0091F40E68700DA43DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Eric Internicola";
+				TargetAttributes = {
+					364CE0101F40E68700DA43DE = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					364CE0241F40E68800DA43DE = {
+						CreatedOnToolsVersion = 9.0;
+						TestTargetID = 364CE0101F40E68700DA43DE;
+					};
+					364CE02D1F40E68800DA43DE = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					364CE03C1F40E68800DA43DE = {
+						CreatedOnToolsVersion = 9.0;
+					};
+				};
+			};
+			buildConfigurationList = 364CE00C1F40E68700DA43DE /* Build configuration list for PBXProject "Timeato" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 364CE0081F40E68700DA43DE;
+			productRefGroup = 364CE0121F40E68700DA43DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				364CE0101F40E68700DA43DE /* Timeato */,
+				364CE0241F40E68800DA43DE /* TimeatoTests */,
+				364CE02D1F40E68800DA43DE /* Timeato WatchKit App */,
+				364CE03C1F40E68800DA43DE /* Timeato WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		364CE00F1F40E68700DA43DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				364CE01F1F40E68700DA43DE /* LaunchScreen.storyboard in Resources */,
+				364CE01C1F40E68700DA43DE /* Assets.xcassets in Resources */,
+				364CE01A1F40E68700DA43DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		364CE0231F40E68800DA43DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		364CE02C1F40E68800DA43DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				364CE0371F40E68800DA43DE /* Assets.xcassets in Resources */,
+				364CE0351F40E68800DA43DE /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		364CE03B1F40E68800DA43DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				364CE0491F40E68800DA43DE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		364CE00D1F40E68700DA43DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				364CE0171F40E68700DA43DE /* ViewController.swift in Sources */,
+				364CE0151F40E68700DA43DE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		364CE0211F40E68800DA43DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				364CE02A1F40E68800DA43DE /* TimeatoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		364CE0391F40E68800DA43DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				364BC30E1F40F2B100B9A4DB /* TimerSettings.swift in Sources */,
+				364BC30C1F40F05900B9A4DB /* TimerSettingsInterfaceController.swift in Sources */,
+				364CE0451F40E68800DA43DE /* ExtensionDelegate.swift in Sources */,
+				364CE0431F40E68800DA43DE /* TimerInterfaceController.swift in Sources */,
+				364CE0471F40E68800DA43DE /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		364CE0271F40E68800DA43DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 364CE0101F40E68700DA43DE /* Timeato */;
+			targetProxy = 364CE0261F40E68800DA43DE /* PBXContainerItemProxy */;
+		};
+		364CE0311F40E68800DA43DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 364CE02D1F40E68800DA43DE /* Timeato WatchKit App */;
+			targetProxy = 364CE0301F40E68800DA43DE /* PBXContainerItemProxy */;
+		};
+		364CE0401F40E68800DA43DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 364CE03C1F40E68800DA43DE /* Timeato WatchKit Extension */;
+			targetProxy = 364CE03F1F40E68800DA43DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		364CE0181F40E68700DA43DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				364CE0191F40E68700DA43DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		364CE01D1F40E68700DA43DE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				364CE01E1F40E68700DA43DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		364CE0331F40E68800DA43DE /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				364CE0341F40E68800DA43DE /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		364CE04B1F40E68800DA43DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		364CE04C1F40E68800DA43DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		364CE04E1F40E68800DA43DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 268S5GJFWZ;
+				INFOPLIST_FILE = "Timeato WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.icolasoft.Timeato.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		364CE04F1F40E68800DA43DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 268S5GJFWZ;
+				INFOPLIST_FILE = "Timeato WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.icolasoft.Timeato.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		364CE0521F40E68800DA43DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 268S5GJFWZ;
+				IBSC_MODULE = Timeato_WatchKit_Extension;
+				INFOPLIST_FILE = "Timeato WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.icolasoft.Timeato.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		364CE0531F40E68800DA43DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 268S5GJFWZ;
+				IBSC_MODULE = Timeato_WatchKit_Extension;
+				INFOPLIST_FILE = "Timeato WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.icolasoft.Timeato.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		364CE0561F40E68800DA43DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 268S5GJFWZ;
+				INFOPLIST_FILE = Timeato/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.icolasoft.Timeato;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		364CE0571F40E68800DA43DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 268S5GJFWZ;
+				INFOPLIST_FILE = Timeato/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.icolasoft.Timeato;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		364CE0591F40E68800DA43DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 268S5GJFWZ;
+				INFOPLIST_FILE = TimeatoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.icolasoft.TimeatoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Timeato.app/Timeato";
+			};
+			name = Debug;
+		};
+		364CE05A1F40E68800DA43DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 268S5GJFWZ;
+				INFOPLIST_FILE = TimeatoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.icolasoft.TimeatoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Timeato.app/Timeato";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		364CE00C1F40E68700DA43DE /* Build configuration list for PBXProject "Timeato" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				364CE04B1F40E68800DA43DE /* Debug */,
+				364CE04C1F40E68800DA43DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		364CE04D1F40E68800DA43DE /* Build configuration list for PBXNativeTarget "Timeato WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				364CE04E1F40E68800DA43DE /* Debug */,
+				364CE04F1F40E68800DA43DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		364CE0511F40E68800DA43DE /* Build configuration list for PBXNativeTarget "Timeato WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				364CE0521F40E68800DA43DE /* Debug */,
+				364CE0531F40E68800DA43DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		364CE0551F40E68800DA43DE /* Build configuration list for PBXNativeTarget "Timeato" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				364CE0561F40E68800DA43DE /* Debug */,
+				364CE0571F40E68800DA43DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		364CE0581F40E68800DA43DE /* Build configuration list for PBXNativeTarget "TimeatoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				364CE0591F40E68800DA43DE /* Debug */,
+				364CE05A1F40E68800DA43DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 364CE0091F40E68700DA43DE /* Project object */;
+}

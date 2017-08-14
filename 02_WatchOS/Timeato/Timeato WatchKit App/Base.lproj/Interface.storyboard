@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13178.6" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13045"/>
+    </dependencies>
+    <scenes>
+        <!--Timer Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="TimerInterfaceController" customModule="Timeato_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="100" alignment="left" id="ikY-Ut-MjB">
+                            <items>
+                                <timer alignment="center" verticalAlignment="center" id="apZ-Np-W24">
+                                    <fontDescription key="font" type="boldSystem" pointSize="42"/>
+                                    <calendarUnit key="units" minute="YES" second="YES"/>
+                                </timer>
+                            </items>
+                        </group>
+                        <button width="1" height="44" alignment="left" verticalAlignment="bottom" title="Start Timer" id="Jzb-F3-FFh">
+                            <color key="titleColor" red="0.07945281127986048" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="startTimerButtonPressed" destination="AgC-eL-Hgc" id="I3e-mL-Kno"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <menu key="menu" id="Hjb-BT-fFW">
+                        <items>
+                            <menuItem title="Settings" icon="more" id="xqV-gL-dvE">
+                                <connections>
+                                    <action selector="showSettings" destination="AgC-eL-Hgc" id="AfZ-is-9Pm"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="timerButton" destination="Jzb-F3-FFh" id="O6O-BZ-l4R"/>
+                        <outlet property="timerLabel" destination="apZ-Np-W24" id="HYB-96-avm"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+        <!--Done-->
+        <scene sceneID="C0q-j5-Ul5">
+            <objects>
+                <controller identifier="TimerSettings" title="Done" id="p9w-En-kQP" customClass="TimerSettingsInterfaceController" customModule="Timeato_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="100" alignment="left" id="8BK-r3-2Vx">
+                            <items>
+                                <timer alignment="center" verticalAlignment="center" id="PKn-hr-gSs">
+                                    <fontDescription key="font" type="boldSystem" pointSize="42"/>
+                                    <calendarUnit key="units" minute="YES" second="YES"/>
+                                </timer>
+                            </items>
+                        </group>
+                        <slider width="1" alignment="left" value="25" maximum="60" steps="12" id="Hjk-Hb-D1t">
+                            <connections>
+                                <action selector="timerLengthSliderChange:" destination="p9w-En-kQP" id="lqt-IX-nIh"/>
+                            </connections>
+                        </slider>
+                    </items>
+                    <connections>
+                        <outlet property="timerLabel" destination="PKn-hr-gSs" id="8SQ-cC-Gvh"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="305" y="330"/>
+        </scene>
+    </scenes>
+</document>
