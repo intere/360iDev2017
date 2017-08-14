@@ -6,8 +6,11 @@
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
+# Git projects (linked in the README)
 03_HealthKit/AsthmaBuddy
 03_HealthKit/ResearchKit
+04_NeuralNetworks/synapse
+04_NeuralNetworks/Swift-AI
 
 
 ## Build generated
