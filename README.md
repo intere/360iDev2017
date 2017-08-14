@@ -23,3 +23,20 @@ We built a watch app from scratch (a pomodoro timer):
 * Wired up notifications (using UNNotificationCenter)
 * Created a complication (Extra large only due to time constraints)
 * moved the supported watch version back to add support for older WatchOS versions
+
+## Monday
+
+### HealthKit
+* https://github.com/Iiiggs/AsthmaBuddy - reference app
+* https://github.com/ResearchKit/ResearchKit - ResearchKit
+* HKUnit - really useful for unit conversions
+* HKWorkout - for reporting workouts
+* HKQuery Types:
+    * HKAnchoredObjectQuery
+    * HKCorrelationQuery
+    * HKObserverQuery
+    * HKSampleQuery
+    * HKSourceQuery
+    * HKStatisticsQuery
+    * HKStatisticsCollectionQuery
+* ResearchKit Chart Control: ORKLineGraphChartView

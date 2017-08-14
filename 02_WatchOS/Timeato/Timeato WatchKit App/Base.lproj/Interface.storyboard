@@ -66,10 +66,11 @@
                     </items>
                     <connections>
                         <outlet property="timerLabel" destination="PKn-hr-gSs" id="8SQ-cC-Gvh"/>
+                        <outlet property="timerSlider" destination="Hjk-Hb-D1t" id="gUC-8K-zSI"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="305" y="330"/>
+            <point key="canvasLocation" x="293" y="73"/>
         </scene>
     </scenes>
 </document>

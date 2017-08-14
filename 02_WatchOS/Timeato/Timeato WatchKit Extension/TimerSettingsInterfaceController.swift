@@ -12,6 +12,7 @@ import Foundation
 class TimerSettingsInterfaceController: WKInterfaceController {
 
     @IBOutlet weak var timerLabel: WKInterfaceTimer?
+    @IBOutlet weak var timerSlider: WKInterfaceSlider?
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -26,14 +27,7 @@ class TimerSettingsInterfaceController: WKInterfaceController {
     }
 
     func updateUI() {
-//        let timerLength = TimerSettings.shared.timerLength
-//        let components = DateComponents(minute: timerLength)
-//        guard let endDate = Calendar.current.date(byAdding: components, to: Date()) else {
-//            fatalError("The world has ended!")
-//            return
-//        }
-//
-//        timerLabel?.setDate(endDate)
         timerLabel?.setDate(TimerSettings.shared.timerEndDate)
+        timerSlider?.setValue(Float(TimerSettings.shared.timerLength))
     }
 }

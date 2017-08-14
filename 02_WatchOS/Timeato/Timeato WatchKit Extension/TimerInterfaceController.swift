@@ -51,12 +51,12 @@ extension TimerInterfaceController {
     }
 
     func beginTimer() {
+        let endDate = TimerSettings.shared.timerEndDate
+
         // This value defaults to false. An app remains the frontmost app for two minutes after the user drops their wrist.
         // Setting this property to true extends the app's time as the frontmost app to eight minutes.
         if #available(watchOSApplicationExtension 4.0, *) {
             WKExtension.shared().isFrontmostTimeoutExtended = true
-        } else {
-            // Fallback on earlier versions
         }
         
         if #available(watchOSApplicationExtension 3.0, *) {
@@ -66,7 +66,7 @@ extension TimerInterfaceController {
                 }
 
                 if authorized {
-                    let trigger = UNTimeIntervalNotificationTrigger(timeInterval: TimerSettings.shared.timerEndDate.timeIntervalSinceNow, repeats: false)
+                    let trigger = UNTimeIntervalNotificationTrigger(timeInterval: endDate.timeIntervalSinceNow, repeats: false)
                     let content = UNMutableNotificationContent()
                     content.title = "Timer Finished"
                     content.body = "Your timer finished"
@@ -81,7 +81,7 @@ extension TimerInterfaceController {
                 }
             }
         } else {
-            WCSession.default.sendMessage(["TimerEndDate": TimerSettings.shared.timerEndDate], replyHandler: nil, errorHandler: { (error) in
+            WCSession.default.sendMessage(["TimerEndDate": endDate], replyHandler: nil, errorHandler: { (error) in
                 NSLog(error.localizedDescription)
             })
         }

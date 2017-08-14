@@ -18,15 +18,16 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     }
     
     func getTimelineStartDate(for complication: CLKComplication, withHandler handler: @escaping (Date?) -> Void) {
+        NSLog("\(String(describing: TimerSettings.shared.currentTimerStartDate))")
         handler(TimerSettings.shared.currentTimerStartDate)
     }
     
     func getTimelineEndDate(for complication: CLKComplication, withHandler handler: @escaping (Date?) -> Void) {
-        if let endDate = TimerSettings.shared.currentTimerEndDate {
-            return handler(endDate + 1)
+        guard let endDate = TimerSettings.shared.currentTimerEndDate else {
+            return handler(nil)
         }
 
-        handler(nil)
+        handler(endDate + 1)
     }
     
     func getPrivacyBehavior(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationPrivacyBehavior) -> Void) {
@@ -51,12 +52,26 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     }
     
     func getTimelineEntries(for complication: CLKComplication, before date: Date, limit: Int, withHandler handler: @escaping ([CLKComplicationTimelineEntry]?) -> Void) {
-        // Call the handler with the timeline entries prior to the given date
-        handler(nil)
+        var entries = [CLKComplicationTimelineEntry]()
+
+        if TimerSettings.shared.isTimerRunning {
+            if date > TimerSettings.shared.currentTimerStartDate ?? Date() {
+                if let template = complicationTemplate(for: complication.family) {
+                    let timelineEntry = CLKComplicationTimelineEntry(date: TimerSettings.shared.currentTimerEndDate!, complicationTemplate: template)
+                    entries.append(timelineEntry)
+                }
+            }
+            if let template = inactiveComplicationTemplate(for: complication.family) {
+                let timelineEntry = CLKComplicationTimelineEntry(date: TimerSettings.shared.currentTimerEndDate!, complicationTemplate: template)
+                entries.append(timelineEntry)
+            }
+        }
+
+        // Call the handler with the timeline entries after to the given date
+        handler(entries)
     }
     
     func getTimelineEntries(for complication: CLKComplication, after date: Date, limit: Int, withHandler handler: @escaping ([CLKComplicationTimelineEntry]?) -> Void) {
-
         var entries = [CLKComplicationTimelineEntry]()
 
         if TimerSettings.shared.isTimerRunning {
@@ -81,8 +96,6 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     // Runs at "install time"
 
     func getLocalizableSampleTemplate(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTemplate?) -> Void) {
-
-
         // This method will be called once per supported complication, and the results will be cached
         handler(nil)
     }

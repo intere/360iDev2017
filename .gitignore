@@ -6,6 +6,10 @@
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
+03_HealthKit/AsthmaBuddy
+03_HealthKit/ResearchKit
+
+
 ## Build generated
 build/
 DerivedData/
