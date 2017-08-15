@@ -82,7 +82,7 @@ Chris presented "Napkin Demo", gesture-based demo on the mac that recognizes a f
     * Convert to Grayscale (RGB would me we'd need 3 input nodes for each pixel)
     * Network expect inputs between (0.0, 1.0) - clamping
 
-## DYNAMIC TYPOGRAPHY & ADAPTIVE LAYOUTS IN IOS 11
+### DYNAMIC TYPOGRAPHY & ADAPTIVE LAYOUTS IN IOS 11
 * Presenter: `Sean Coleman`
 * Font Pairing:
     * Roboto Slab / San Francisco Pro Text (example)
@@ -103,13 +103,111 @@ Chris presented "Napkin Demo", gesture-based demo on the mac that recognizes a f
     * Show the NYT paper embedded in a iOS Screen 🤣
 * Be a platform advocate!
 
-## EVENT DELIVERY IN IOS
+### EVENT DELIVERY IN IOS
 * Presenter: `Brandon Alexander`
 * Slides: https://github.com/whilethis/360iDev_Event_Delivery
 
-## ADVANCED DEBUGGING WITH XCODE – EXTENDING LLDB
+### ADVANCED DEBUGGING WITH XCODE – EXTENDING LLDB
 * Slides: https://www.slideshare.net/aijazansari2/360idev
 
-## ADVANCED DATES AND TIMES IN SWIFT
+### ADVANCED DATES AND TIMES IN SWIFT
 * Presenter: `Jeff Kelley`
 * Slides: https://speakerdeck.com/slaunchaman/advanced-dates-and-times-in-swift-360-idev-2017
+
+
+## Tuesday
+
+### PLAYING NICE WITH DESIGN
+* Presenter: `Ellen Shapiro`
+* Slides:
+* Some talking points:
+    * TrueColors (Open Source: TBD)
+    * Sourcery: https://github.com/krzysztofzablocki/Sourcery
+    * "Uniform" (Interactive Style Guide):
+    * Using playgrounds to work with your designers
+    * `Playgroundbook` - Ruby framework for building playground books:
+        * https://github.com/playgroundbooks/playgroundbook
+    * For now, have your designers run Xcode to run your playground (from your workspace)
+        * Add a run script to launch the playground (see slides)
+
+### DEEP LEARNING ON IOS
+* Presenter: `Shuichi Tsutsumi`
+* Slides: https://www.slideshare.net/t26v0748/deep-learning-on-ios
+* Sample Code: https://github.com/shu223/iOS-10-Sampler
+* Github: https://github.com/shu223 (iOS Samplers)
+* How to implement "Deep Learning" on iOS
+* "Pose Estimation" example
+* Demo - app that recognizes over 1000 types of objects (while in airplane mode)
+    * Pre-trained models (inference) take considerably less CPU and can run on a mobile device
+* CoreML (iOS11)
+    * Uses Metal Performance Shaders (MPSCNN) - GPU - iOS10
+    * Uses Accelerate (BNNS) - CPU - iOS10
+* 3 steps
+    1. Create the Model
+        * What tools can be used for the training?
+            * TensorFlow
+            * Caffe
+            * Keras
+            * Any other format can be used as long as it can be read by the app: `.dat`, `.hdf5`
+    2. Implementing the Network
+        * Classes corresponding to each CNN layers are provided:
+            * MPSCNNConvolution (Convolution)
+            * MPSSCNNPooling (Pooling)
+            * MPSCNNFullyConnected (Fully Connected)
+        * Complicated math or GPU optimization are encapsulated
+    3.  Implement the inference
+        * MPSImage: Input Image
+        * CNN: trained params are loaded
+        * Result
+* Demo: Swift Logo detection
+    * Trained the model using Tensor Flow
+    * 2000 lines of code for the shader implementation
+    * CoreML:
+        1. Convert w/ coremltools
+        2. Drag & Drop model -> xcode -> generate Swift
+* Vision framework sits on top of CoreML
+    * You don't have to touch metal to use the vision framework
+* You should generally choose MPSCNN (GPU) over BNNS (CPU) for ML
+
+### TensorFlow on iOS
+* Presenter: `Taylan Pince` @tylanpince
+* Slides: https://speakerdeck.com/taylanpince/tensorflow-neural-networks-on-ios
+* Interesting (Related) Projects
+    * ImageNet - open DB of pre-tagged images
+    * Kaggle - https://www.kaggle.com/ - The Home of Data Science & Machine Learning
+* Very much "trial and error", not "science"
+* 10% of your "data" should be used for training data, and the remaining for testing
+    * don't cross the streams!
+* Tensorflow
+    * produces a `pb file`
+    * C++ Library
+    * Adds about 40MB to final binary size
+    * Can't use bitcode
+    * Cannot use GPU (uses CPU)
+    * Tensorflow - use `freeze_graph` & `optimize_for_inference`
+    * Import final `pb` file into Xcode project
+* CoreML
+    * Pretrained Models
+        * Inception v3
+        * VGG16
+        * MobileNet
+        * SqueezeNet
+    * Custom Models
+        * Convert Caffe or Keras models with coremltools
+        * import mlmodel into your xcode project
+* Metal
+    * Low-level API behind CoreML
+    * Always runs on GPU
+    * Got tons of love with iOS11 updates
+    * Apple has the full inception v3 model implemented in model as sample code
+    * Convert `pb` file into a binary metal can read
+* Recap
+    * Train with TensorFlow + Keras
+    * Use CoreML if you can
+    * Use TF if you need multi-platform
+* Lots of Apple Samples
+
+## Life Beyond Storyboards
+* Presenter: `Ryan Poolos`
+* Layout Anchors
+    *
