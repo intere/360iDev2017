@@ -84,6 +84,7 @@ Chris presented "Napkin Demo", gesture-based demo on the mac that recognizes a f
 
 ### DYNAMIC TYPOGRAPHY & ADAPTIVE LAYOUTS IN IOS 11
 * Presenter: `Sean Coleman`
+* Slides: https://speakerdeck.com/bjtitus/creating-adaptable-layouts
 * Font Pairing:
     * Roboto Slab / San Francisco Pro Text (example)
 * San Francisco was designed with Accessibility in mind.
@@ -114,6 +115,9 @@ Chris presented "Napkin Demo", gesture-based demo on the mac that recognizes a f
 * Presenter: `Jeff Kelley`
 * Slides: https://speakerdeck.com/slaunchaman/advanced-dates-and-times-in-swift-360-idev-2017
 
+### ADVANCED BUILDING APPS FOR APPLE TV
+* Slides: https://github.com/justindomnitz/iDev2017_tvOS
+* Sample Code: https://github.com/justindomnitz/iDev2016_tvOS
 
 ## Tuesday
 
@@ -129,6 +133,10 @@ Chris presented "Napkin Demo", gesture-based demo on the mac that recognizes a f
         * https://github.com/playgroundbooks/playgroundbook
     * For now, have your designers run Xcode to run your playground (from your workspace)
         * Add a run script to launch the playground (see slides)
+
+### CREATING ADAPTABLE LAYOUTS USING TRAIT COLLECTIONS AND CONTAINER VIEWS
+* Presenter: `Brandon Titus`
+* Slides: https://speakerdeck.com/bjtitus/creating-adaptable-layouts
 
 ### DEEP LEARNING ON IOS
 * Presenter: `Shuichi Tsutsumi`
@@ -172,6 +180,9 @@ Chris presented "Napkin Demo", gesture-based demo on the mac that recognizes a f
 ### TensorFlow on iOS
 * Presenter: `Taylan Pince` @tylanpince
 * Slides: https://speakerdeck.com/taylanpince/tensorflow-neural-networks-on-ios
+* Links:
+    * http://machinethink.net/blog/tensorflow-on-ios/ - Great introductory tutorial on gathering your data, training on a custom model, setting up TensorFlow, converting to a mobile optimized network, and loading it up on an iOS app
+    * http://www.reza.codes/2017-07-29/how-to-train-your-own-dataset-for-coreml/ - Detailed tutorial on how to train your own model for CoreML
 * Interesting (Related) Projects
     * ImageNet - open DB of pre-tagged images
     * Kaggle - https://www.kaggle.com/ - The Home of Data Science & Machine Learning
@@ -207,7 +218,13 @@ Chris presented "Napkin Demo", gesture-based demo on the mac that recognizes a f
     * Use TF if you need multi-platform
 * Lots of Apple Samples
 
-## Life Beyond Storyboards
+### Life Beyond Storyboards
 * Presenter: `Ryan Poolos`
 * Layout Anchors
-    *
+
+
+## Wednesday
+
+### HOW OPEN SOURCE DEVELOPMENT CAN MAKE YOU A BETTER DEVELOPER
+* Presenter: `Arthur Sabintsev`
+* Slides https://github.com/ArtSabintsev/360iDev-2017
