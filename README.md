@@ -114,6 +114,8 @@ Chris presented "Napkin Demo", gesture-based demo on the mac that recognizes a f
 ### ADVANCED DATES AND TIMES IN SWIFT
 * Presenter: `Jeff Kelley`
 * Slides: https://speakerdeck.com/slaunchaman/advanced-dates-and-times-in-swift-360-idev-2017
+* Playground: https://360idev-2017.slack.com/archives/C6NHX9DT6/p1502833781000368
+* Project (Drop it like its clock): https://github.com/SlaunchaMan/DropItLikeItsClock
 
 ### ADVANCED BUILDING APPS FOR APPLE TV
 * Slides: https://github.com/justindomnitz/iDev2017_tvOS
@@ -221,6 +223,10 @@ Chris presented "Napkin Demo", gesture-based demo on the mac that recognizes a f
 ### Life Beyond Storyboards
 * Presenter: `Ryan Poolos`
 * Layout Anchors
+
+### IMPLEMENTING CONTINUOUS DELIVERY WITH IOS
+* Presenter: `Cassie Shum`
+* Slides: https://speakerdeck.com/cassiend/ios-with-continuous-delivery
 
 
 ## Wednesday
