@@ -14,6 +14,7 @@ learned about some of the features of the audio support for iOS.
 ### Workshop 2: DEVELOPING FOR APPLE WATCH WITH SWIFT
 * Link: https://360idev.com/sessions/developing-apple-watch-swift/
 * Slides: https://speakerdeck.com/slaunchaman/do-i-need-an-apple-watch-app-360-idev-2017
+* Sample Code: https://github.com/SlaunchaMan/Timeato
 * Presenter: `Jeff Kelley`
 * Folder: `02_WatchOS`
 * Xcode9
@@ -228,9 +229,23 @@ Chris presented "Napkin Demo", gesture-based demo on the mac that recognizes a f
 * Presenter: `Cassie Shum`
 * Slides: https://speakerdeck.com/cassiend/ios-with-continuous-delivery
 
+### THREADS, QUEUES, AND THINGS TO COME: THE PRESENT AND FUTURE OF CONCURRENCY IN SWIFT
+* Presenter: `Ben DiFrancesco`
+* Slides:
+* Sample Code: https://github.com/apbendi/ConNews
+* GCD, (NS)Operation
+
+### ADVANCED DRAWING TECHNIQUES WITH UIBEZIERPATH AND APPLE PENCIL
+* Presenter: `Nick Dalton`
+* Slides / Code Samples: https://github.com/iNick/360iDev-2017
+
 
 ## Wednesday
 
 ### HOW OPEN SOURCE DEVELOPMENT CAN MAKE YOU A BETTER DEVELOPER
 * Presenter: `Arthur Sabintsev`
 * Slides https://github.com/ArtSabintsev/360iDev-2017
+
+### THE LATEST IN DEVELOPING FOR WATCHOS
+* Presenter: `Conrad Stoll`
+* Slides: https://speakerdeck.com/cnstoll/the-latest-in-developing-for-watchos
