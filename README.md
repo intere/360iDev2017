@@ -1,6 +1,6 @@
-# 360|iDev
+# 360|iDev 2017
 
-## Sunday
+## Sunday (August 13)
 
 ### Workshop 1: BUILD YOUR OWN CUSTOM MUSICAL INSTRUMENT
 * Link: https://360idev.com/sessions/build-custom-musical-instrument/
@@ -30,7 +30,7 @@ We built a watch app from scratch (a pomodoro timer):
 * Presenter: `Kendall Gelner`
 * Materials: https://www.dropbox.com/sh/pyc4uz4ad1aji2f/AAAm9bQ5jXisq4DP5W1tDYjSa?dl=0
 
-## Monday
+## Monday (August 14)
 
 ### HealthKit
 * Presenter: `Igor Kantor`
@@ -48,6 +48,14 @@ We built a watch app from scratch (a pomodoro timer):
     * HKStatisticsQuery
     * HKStatisticsCollectionQuery
 * ResearchKit Chart Control: ORKLineGraphChartView
+
+### BEYOND BYTE: PROTOTYPING WITH IPAD PLAYGROUNDS
+* Presenter: `Steven Lipton`
+* Page: http://makeapppie.com/swift-playgrounds/
+    * [Full Download](https://apppie.files.wordpress.com/2017/08/360idev_exercises.zip)
+    * [MakeAppPie Starter Book](https://apppie.files.wordpress.com/2017/08/apppiestarter-playgroundbook.zip)
+    * [Prototype Starter](https://apppie.files.wordpress.com/2017/08/prototypestarter-playgroundbook.zip)
+
 
 ### EXPLORING NEURAL NETWORKS FOR RECOGNITION OF HAND-DRAWN SHAPES
 * Presenter: `Chris Parrish`
@@ -122,7 +130,11 @@ Chris presented "Napkin Demo", gesture-based demo on the mac that recognizes a f
 * Slides: https://github.com/justindomnitz/iDev2017_tvOS
 * Sample Code: https://github.com/justindomnitz/iDev2016_tvOS
 
-## Tuesday
+### FROM IOS TO IOT: THE EXPERIENCES OF A SOFTWARE GUY BUILDING HARDWARE
+* Presenter: `Ben Lachman`
+* Slides: http://meetglow.com/docs/2017-360-talk.pdf
+
+## Tuesday (August 15)
 
 ### PLAYING NICE WITH DESIGN
 * Presenter: `Ellen Shapiro`
@@ -235,17 +247,34 @@ Chris presented "Napkin Demo", gesture-based demo on the mac that recognizes a f
 * Sample Code: https://github.com/apbendi/ConNews
 * GCD, (NS)Operation
 
+### NOTIFICATION HANDLING ON WATCHKIT
+* Presenter: `Eric Blair`
+* Presentation + Sample Code: https://github.com/jablair/360iDev-WatchKitNotifications
+
 ### ADVANCED DRAWING TECHNIQUES WITH UIBEZIERPATH AND APPLE PENCIL
 * Presenter: `Nick Dalton`
 * Slides / Code Samples: https://github.com/iNick/360iDev-2017
 
 
-## Wednesday
+## Wednesday (August 16)
 
 ### HOW OPEN SOURCE DEVELOPMENT CAN MAKE YOU A BETTER DEVELOPER
 * Presenter: `Arthur Sabintsev`
 * Slides https://github.com/ArtSabintsev/360iDev-2017
 
+### THE INTERNET OF THINGS AND IOS: DON’T LET YOUR TOASTER BRING DOWN THE INTERNET!
+* Presenter: `Florian Harr`
+* Slides: https://speakerdeck.com/evils/the-internet-of-things-and-ios-dont-let-your-toaster-bring-down-the-internet
+
 ### THE LATEST IN DEVELOPING FOR WATCHOS
 * Presenter: `Conrad Stoll`
 * Slides: https://speakerdeck.com/cnstoll/the-latest-in-developing-for-watchos
+* Sample Code: https://github.com/cnstoll/Snowman
+    * Snowman watch game:
+        * uses CoreML for handwriting recognition as input to
+
+
+### REVERSE ENGINEERING THE IOS SIMULATOR’S SPRINGBOARD
+* Presenter: `Derek Selander`
+*
+* Sample Code: https://github.com/DerekSelander/lldb
