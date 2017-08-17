@@ -1,5 +1,8 @@
 # 360|iDev 2017
 
+[360|iDev Schedule](https://360idev.com/schedule/)
+
+
 ## Sunday (August 13)
 
 ### Workshop 1: BUILD YOUR OWN CUSTOM MUSICAL INSTRUMENT
@@ -119,6 +122,7 @@ Chris presented "Napkin Demo", gesture-based demo on the mac that recognizes a f
 
 ### ADVANCED DEBUGGING WITH XCODE – EXTENDING LLDB
 * Slides: https://www.slideshare.net/aijazansari2/360idev
+* Code: https://github.com/aijaz/lldbPythonScripts
 
 ### ADVANCED DATES AND TIMES IN SWIFT
 * Presenter: `Jeff Kelley`
@@ -136,9 +140,17 @@ Chris presented "Napkin Demo", gesture-based demo on the mac that recognizes a f
 
 ## Tuesday (August 15)
 
+### PRACTICAL SECURITY
+* Presenter: `Rob Napier`
+* Slides: https://github.com/rnapier/practical-security
+
+### LEARNING FROM IOS ANIMATIONS
+* Presenter: `Justin Miller`
+* Slides: http://justinmiller.io/talks/media/Justin%20Miller%20-%20360iDev%202017%20-%20Learning%20From%20iOS%20Animations.pdf
+
 ### PLAYING NICE WITH DESIGN
 * Presenter: `Ellen Shapiro`
-* Slides:
+* Slides: https://speakerdeck.com/designatednerd/playing-nice-with-design-360idev-denver-august-2017
 * Some talking points:
     * TrueColors (Open Source: TBD)
     * Sourcery: https://github.com/krzysztofzablocki/Sourcery
@@ -235,17 +247,36 @@ Chris presented "Napkin Demo", gesture-based demo on the mac that recognizes a f
 
 ### Life Beyond Storyboards
 * Presenter: `Ryan Poolos`
+* Slides:
 * Layout Anchors
 
 ### IMPLEMENTING CONTINUOUS DELIVERY WITH IOS
 * Presenter: `Cassie Shum`
 * Slides: https://speakerdeck.com/cassiend/ios-with-continuous-delivery
 
+### OVERCOMING THE STRESS SURROUNDING CODE REVIEW, FOR THE BETTERMENT OF YOUR PROJECT AND CAREER
+* Presenter: `Mike Zornek`
+* Slides: https://github.com/intere/360iDev2017/blob/master/presentations/zornek-code-review-360idev.pdf
+
+
 ### THREADS, QUEUES, AND THINGS TO COME: THE PRESENT AND FUTURE OF CONCURRENCY IN SWIFT
 * Presenter: `Ben DiFrancesco`
-* Slides:
+* Slides: https://github.com/intere/360iDev2017/blob/master/presentations/Threads-Queues-Things-To-Come-Slide-Archive.key
 * Sample Code: https://github.com/apbendi/ConNews
 * GCD, (NS)Operation
+
+### IF YOU CAN LEARN IT, YOU CAN TEACH IT
+* Presenter: `Tammy Coron`
+* Slides: https://drive.google.com/open?id=0B_oWPP0vddVVc2JIQzV2SXM5UkE
+
+### STARTING, GROWING AND RUNNING A SUCCESSFUL DEVELOPER MEETUP
+* Presenter: `Mike Zornek`
+* Slides: https://github.com/intere/360iDev2017/blob/master/presentations/zornek-meetup-360idev.pdf
+
+### THE RIGHT 🛠 S FOR THE JOB
+* Presenter: `Tyler Burgett`
+* Slides: https://speakerdeck.com/tyburg/the-right-s-for-the-job
+
 
 ### NOTIFICATION HANDLING ON WATCHKIT
 * Presenter: `Eric Blair`
@@ -257,6 +288,14 @@ Chris presented "Napkin Demo", gesture-based demo on the mac that recognizes a f
 
 
 ## Wednesday (August 16)
+
+### ADVANCED BUILDING APPS FOR APPLE WATCH
+* Presenter: `Justin Domnitz`
+* Slides: https://github.com/justindomnitz/iDev2015_watchOS
+
+### HOW I LEARNED TO STOP WORRYING AND LOVE AUTOLAYOUT
+* Presenter: `Jonny Klemmer`
+* Slides: https://speakerdeck.com/jonnyklemmer/how-i-learned-to-stop-worrying-and-love-auto-layout
 
 ### HOW OPEN SOURCE DEVELOPMENT CAN MAKE YOU A BETTER DEVELOPER
 * Presenter: `Arthur Sabintsev`
@@ -273,8 +312,16 @@ Chris presented "Napkin Demo", gesture-based demo on the mac that recognizes a f
     * Snowman watch game:
         * uses CoreML for handwriting recognition as input to
 
+### CONTRIBUTING TO SWIFT
+* Presenter: `Neil Kimmett`
+* Slides: https://github.com/intere/360iDev2017/blob/master/presentations/Contributing%20to%20Swift.pdf
+
+### LEGAL ISSUES IN IOS DEVELOPMENT
+* Presenter: `Michael Schneider`
+* Slides: https://github.com/intere/360iDev2017/blob/master/presentations/360-iDev%20Legal%20Issues%20in%20iPhone%20Dev%202017%20(for%20PDF).pdf
 
 ### REVERSE ENGINEERING THE IOS SIMULATOR’S SPRINGBOARD
 * Presenter: `Derek Selander`
-*
 * Sample Code: https://github.com/DerekSelander/lldb
+
+This talk was a hands-on demo where Derek used LLDB + his own suite of tools (see the git repo above and Facebook's chisel for more detail) to hack springboard.  You need to be a bit more than a script-kiddy to be able to do what he does here.  Great demo!
