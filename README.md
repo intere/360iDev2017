@@ -323,6 +323,7 @@ Chris presented "Napkin Demo", gesture-based demo on the mac that recognizes a f
 
 ### REVERSE ENGINEERING THE IOS SIMULATOR’S SPRINGBOARD
 * Presenter: `Derek Selander`
+* Slides: https://speakerdeck.com/lolgrep/reverse-engineering-the-ios-simulators-springboard
 * Sample Code: https://github.com/DerekSelander/lldb
 
 This talk was a hands-on demo where Derek used LLDB + his own suite of tools (see the git repo above and Facebook's chisel for more detail) to hack springboard.  You need to be a bit more than a script-kiddy to be able to do what he does here.  Great demo!
