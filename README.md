@@ -2,6 +2,7 @@
 
 [360|iDev Schedule](https://360idev.com/schedule/)
 
+<img src="https://github.com/intere/360iDev2017/blob/master/photos/ArthurJosipEric.jpg?raw=true" width="300">
 
 ## Sunday (August 13)
 
