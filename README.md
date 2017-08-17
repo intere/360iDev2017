@@ -9,7 +9,7 @@
 ### Workshop 1: BUILD YOUR OWN CUSTOM MUSICAL INSTRUMENT
 * Link: https://360idev.com/sessions/build-custom-musical-instrument/
 * Presenter: `Aurelius Prochazka`
-* Folder: `01_Audio`
+* Folder: [01_BuildYourOwnCustomMusicalInstrument](https://github.com/intere/360iDev2017/tree/master/01_Audio/01_BuildYourOwnCustomMusicalInstrument)
 * Xcode8
 
 In this workshop we utilized AudioKit to build some custom soundboards.  We
