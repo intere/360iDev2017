@@ -306,6 +306,10 @@ Chris presented "Napkin Demo", gesture-based demo on the mac that recognizes a f
 * Presenter: `Florian Harr`
 * Slides: https://speakerdeck.com/evils/the-internet-of-things-and-ios-dont-let-your-toaster-bring-down-the-internet
 
+### NETWORKING AND PERSISTENCE IN MOBILE APPLICATIONS AT SCALE
+* Presenter: `Jake Schwartz`
+* Slides: https://speakerdeck.com/jakesc/networking-and-persistence-in-mobile-apps-at-scale
+
 ### THE LATEST IN DEVELOPING FOR WATCHOS
 * Presenter: `Conrad Stoll`
 * Slides: https://speakerdeck.com/cnstoll/the-latest-in-developing-for-watchos
