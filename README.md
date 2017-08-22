@@ -326,3 +326,8 @@ Chris presented "Napkin Demo", gesture-based demo on the mac that recognizes a f
 * Sample Code: https://github.com/DerekSelander/lldb
 
 This talk was a hands-on demo where Derek used LLDB + his own suite of tools (see the git repo above and Facebook's chisel for more detail) to hack springboard.  You need to be a bit more than a script-kiddy to be able to do what he does here.  Great demo!
+
+### USING C LIBRARIES IN SWIFT 3
+* Presenter: `Andrew Morrow`
+* Slides: https://github.com/ComcastSamples/360iDev-2017/raw/master/slides.pdf
+* Sample Code: https://github.com/ComcastSamples/360iDev-2017
