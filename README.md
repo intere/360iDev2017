@@ -139,6 +139,10 @@ Chris presented "Napkin Demo", gesture-based demo on the mac that recognizes a f
 * Presenter: `Ben Lachman`
 * Slides: http://meetglow.com/docs/2017-360-talk.pdf
 
+### BEING A BETTER DEVELOPER BY TALKING
+* Presenters: `Tim Mitra & Jaime Lopez Jr.`
+* Sides: https://speakerdeck.com/timmitra/being-a-better-developer-by-talking
+
 ## Tuesday (August 15)
 
 ### PRACTICAL SECURITY
